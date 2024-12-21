@@ -1,0 +1,50 @@
+/* Светлая тема */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-text-color: #5678A6;
+    --primary-color: #DCFF05;
+    --secondary-color: #102D69;
+    --navbar-bg: #343a40;
+    --link-color: #5678A6;
+    --link-hover-color: #DCFF05;
+    --footer-bg: #343a40;
+    --footer-text-color: #ffffff;
+    --logo-title-color: #000000; /* Тёмный цвет имени */
+}
+
+/* Тёмная тема */
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-text-color: #90A4AE;
+    --primary-color: #BB86FC;
+    --secondary-color: #03DAC6;
+    --navbar-bg: #1F1B24;
+    --link-color: #03DAC6;
+    --link-hover-color: #BB86FC;
+    --footer-bg: #1F1B24;
+    --footer-text-color: #ffffff;
+    --logo-title-color: #ffffff; /* Светлый цвет имени */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-bg, .bg-light {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-text-color);
+}
+
+.logo-title {
+    color: var(--logo-title-color);
+}
+
+/* Прочее оформление */
+...

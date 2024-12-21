@@ -1,0 +1,48 @@
+/* static/css/dark_theme.css */
+
+/* Тёмная тема */
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-text-color: #90A4AE;
+    --primary-color: #2a4ddf; /* Новый синий фон для кнопок */
+    --secondary-color: #ffffff; /* Белый текст */
+    --navbar-bg: #1F1B24;
+    --link-color: #03DAC6;
+    --link-hover-color: #BB86FC;
+    --footer-bg: #1F1B24;
+    --footer-text-color: #ffffff;
+    --logo-title-color: #ffffff; /* Имя в тёмной теме – светлое */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-bg,
+.bg-light {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-text-color);
+}
+
+.logo-title {
+    color: var(--logo-title-color);
+}
+
+/* Кнопки контактов */
+.btn-contact {
+    background-color: var(--primary-color); /* Синий фон */
+    color: var(--secondary-color); /* Белый текст */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #1a3bb3; /* Более тёмный синий при наведении */
+    color: var(--secondary-color); /* Белый текст */
+}

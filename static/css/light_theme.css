@@ -1,0 +1,106 @@
+/* static/css/light_theme.css */
+
+/* Светлая тема */
+:root {
+    --background-color: #ffffff; /* Белый фон */
+    --text-color: #000000; /* Чёрный текст */
+    --header-text-color: #0056b3; /* Тёмно-синий для заголовков */
+    --primary-color: #0056b3; /* Синий основной */
+    --secondary-color: #343a40; /* Тёмно-серый */
+    --navbar-bg: #f8f9fa; /* Светлый серый для меню */
+    --link-color: #0056b3; /* Синий цвет ссылок */
+    --link-hover-color: #002d69; /* Ещё темнее синий при наведении */
+    --footer-bg: #f8f9fa; /* Светло-серый для подвала */
+    --footer-text-color: #343a40; /* Тёмно-серый текст */
+    --logo-title-color: #0056b3; /* Имя – тёмно-синий */
+    --subtitle-color: #666666; /* Подзаголовок – серый */
+    --lang-separator-color: #999999; /* Разделитель языков – светло-серый */
+
+    /* Дополнительные оттенки */
+    --bg-custom-1: #f1f1f1; /* Очень светло-серый */
+    --bg-custom-2: #ffffff; /* Белый */
+
+    /* Цвета для кнопок */
+    --button-bg-light: #0056b3; /* Тёмно-синий */
+    --button-text-light: #ffffff; /* Белый текст */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Разные фоны */
+.bg-light-custom {
+    background-color: var(--bg-custom-1) !important;
+    color: var(--text-color) !important;
+}
+.bg-light-custom-2 {
+    background-color: var(--bg-custom-2) !important;
+    color: var(--text-color) !important;
+}
+.dark-bg-custom {
+    background-color: var(--navbar-bg) !important;
+    color: var(--footer-text-color) !important;
+}
+
+.dark-bg, .bg-light {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Для подзаголовков */
+.logo-subtitle {
+    color: var(--subtitle-color);
+}
+
+.text-white-40 {
+    color: rgba(0, 0, 0, 0.4) !important; /* Светло-чёрный для прозрачного текста */
+}
+
+/* Кнопки контактов */
+.btn-contact {
+    background-color: var(--button-bg-light); /* Тёмно-синий фон */
+    color: var(--button-text-light); /* Белый текст */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-contact:hover {
+    background-color: var(--button-text-light); /* Белый фон при наведении */
+    color: var(--button-bg-light); /* Синий текст при наведении */
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-text-color);
+}
+
+/* Имя */
+.logo-title {
+    color: var(--logo-title-color);
+}
+
+/* Ссылки */
+.nav-link,
+.text-link {
+    color: var(--link-color) !important;
+}
+.nav-link:hover,
+.text-link:hover {
+    color: var(--link-hover-color) !important;
+}
+
+/* Разделитель языков */
+.lang-separator {
+    color: var(--lang-separator-color);
+}
+
+/* Специальные классы для цветовых оттенков */
+.bg-contact-custom {
+    background-color: var(--bg-custom-1);
+}
+
+.bg-footer-custom {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+}
