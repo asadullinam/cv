@@ -66,11 +66,14 @@
           </ul>
 
           <!-- Блок справа: переключатель темы и языков -->
-          <ul class="navbar-nav">
-            <!-- Сюда вставится переключатель темы -->
-            <li class="nav-item mx-2" id="theme-toggle-container"></li>
-            <!-- Языки -->
-            <li class="nav-item mx-2 language-toggle d-flex align-items-center">
+          <ul class="navbar-nav d-flex align-items-center">
+            <!-- Контейнер для переключателя темы -->
+            <li class="nav-item mx-2 d-flex align-items-center" id="theme-toggle-container">
+              <!-- Здесь JavaScript добавит ваш переключатель -->
+            </li>
+
+            <!-- Блок переключения языка -->
+            <li class="nav-item mx-2 d-flex align-items-center language-toggle">
               <a href="#" id="lang-en" class="nav-link active">EN</a>
               <span class="lang-separator mx-1">|</span>
               <a href="#" id="lang-ru" class="nav-link">RU</a>
